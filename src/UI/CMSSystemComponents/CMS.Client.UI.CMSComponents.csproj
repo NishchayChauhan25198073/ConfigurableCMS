@@ -15,6 +15,11 @@
 
 	<ItemGroup>
 	  <PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.16" />
+	  <PackageReference Include="MudBlazor" Version="6.3.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Foundations\CMS.Foundation.Infrastructure\CMS.Foundation.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>
