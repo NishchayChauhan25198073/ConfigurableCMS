@@ -4,7 +4,7 @@
     {
         public BaseItem()
         {
-            
+
         }
         public BaseItem(string classname)
         {

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Components\PageEntry.razor.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Components\PageEntry.razor.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Components" Version="6.0.16" />
+	</ItemGroup>
+
+</Project>

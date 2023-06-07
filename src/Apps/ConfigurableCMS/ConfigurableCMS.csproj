@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\UI\Components\CMS.Client.UI.Components.csproj" />
+  </ItemGroup>
+
 </Project>
