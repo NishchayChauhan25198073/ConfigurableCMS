@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "CMS.Grpc.SQLServer": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5209;https://localhost:7076",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

@@ -1,5 +1,9 @@
-﻿namespace CMS.Foundation.Infrastructure.Types
+﻿using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
+
+namespace CMS.Foundation.Infrastructure.Types
 {
+    [DataContract]
     public class BaseItem
     {
         public BaseItem()
@@ -13,15 +17,32 @@
             ClassName = classname;
         }
 
+        [DataMember(Order = 1)]
         public string Name { get; set; }
+
+        [DataMember(Order = 2)]
         public string ClassName { get; set; }
+
+        [DataMember(Order = 3)]
         public string Id { get; set; }
+
+        [DataMember(Order = 4)]
         public string PIMId { get; set; }
+
+        [DataMember(Order = 5)]
         public string DisplayTitle { get; set; }
+
+        [DataMember(Order = 6)]
         public string DisplayName { get; set; }
-        public TemplateItem TemplateItem { get; set; }
+
+        [DataMember(Order = 7)]
         public Dictionary<string, string> LanguageFields { get; set; }
+
+        [DataMember(Order = 8)]
         public Dictionary<string, string> SharedFields { get; set; }
+
+        [JsonIgnore]
+        public TemplateItem TemplateItem { get; set; }
 
         #region Fields Fetch Operations
 
